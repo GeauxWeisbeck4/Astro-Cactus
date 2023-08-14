@@ -1,13 +1,13 @@
 ---
 import PageLayout from "@/layouts/Base";
-import BlogPostPreview from "@/components/BlogPostPreview";
+import HomePagePostPreview from "@/components/HomePagePostPreview";
 import SocialList from "@/components/SocialList";
 import { sortMDByDate } from "@/util";
 import type { Post } from "@/types";
 
 const meta = {
-	title: "Astro Cactus",
-	description: "The perfect starter for your perfect blog.",
+	title: "RebelsAdvocate.dev",
+	description: "A blog for the abnormal, the awesome, and the ones who don't enjoy groupthink. Lovers of freedom, lovers of uniqueness. Social butterfly, lover of life. Hater of facism.",
 };
 
 const MAX_POSTS = 10;
@@ -17,12 +17,9 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
 <PageLayout meta={meta}>
 	<section>
-		<h1 class="mb-6 title">Hello World!</h1>
+		<h1 class="mb-6 title">Welcome to the Rebel's Advocate!</h1>
 		<p class="mb-4">
-			Hi, I’m a theme for Astro, an example of how you can use this starter to
-			create a personal blog. If you want to know more about how you can
-			customise me, add more posts, and make it your own, click on one of the
-			social links which will take you to my repo.
+			If you are looking for a blog that goes against the grain, then you've come to the right place. I speak out against injustices against the freedom of speech, your basic rights, and call out those trying to take your freedom away, all for their own perverted needs of power and control. Join me in saying "fuck conformity" and join me in embracing abnormalities. We are all beautiful, we all matter, and we all belong here in the country of the Star Spangled Banner.
 		</p>
 		<SocialList />
 	</section>
@@ -32,7 +29,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 			{
 				allPostsByDate.map((p) => (
 					<li class="flex flex-wrap items-center gap-x-2 [&_q]:w-full">
-						<BlogPostPreview post={p} as="h2" />
+						<HomePagePostPreview post={p} as="h2" />
 					</li>
 				))
 			}

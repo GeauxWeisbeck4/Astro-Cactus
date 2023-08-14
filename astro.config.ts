@@ -11,11 +11,11 @@ export default defineConfig({
 			wrap: true,
 		},
 	},
-	site: "https://www.astro-theme-cactus.netlify.app",
+	site: "https://www.rebelsadvocate.dev",
 	integrations: [
 		mdx({}),
 		tailwind({
-			config: { applyBaseStyles: false },
+			config: { applyBaseStyles: true },
 		}),
 		image(),
 		sitemap(),

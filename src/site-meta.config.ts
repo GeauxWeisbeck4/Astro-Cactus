@@ -1,11 +1,11 @@
 const siteMeta = {
-  title: "Astro Theme Cactus",
-  description: "An opinionated starter theme for Astro",
+  title: "Rebel's Advocate",
+  description: " A publication that pushes limits and asks questions that others are scared to ask.",
   lang: "en-GB",
   ogLocale: "en_GB",
-  githubUrl: "https://github.com/chrismwilliams/astro-theme-cactus",
+  githubUrl: "https://github.com/geauxweisbeck4/rebelsadvocate.dev",
   themeColorLight: "#fafafa",
-  themeColorDark: "#1d1f21",
+  themeColorDark: "#288fde",
 }
 
 export default siteMeta;

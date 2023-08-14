@@ -42,7 +42,7 @@ const url = new URL(Astro.request.url);
 				<path d="M45.334 240 0 213.334v120L45.334 360V240Z" fill="#B04304"
 				></path>
 			</svg>
-			<span>Astro Cactus</span>
+			<span>The Rebel's Advocate: Fight For Truth</span>
 		</a>
 		<nav id="navigation-menu" aria-label="Main">
 			<a href="/" aria-current={url.pathname === "/" ? "page" : false}>Home</a>
@@ -51,6 +51,18 @@ const url = new URL(Astro.request.url);
 			</a>
 			<a href="/posts" aria-current={url.pathname === "/posts" ? "page" : false}
 				>Blog
+			</a>
+			<a href="/podcast" aria-current={url.pathname === "/podcast" ? "page" : false}
+				>Podcast
+		    </a>
+			<a href="/newsletter" aria-current={url.pathname === "/newsletter" ? "page" : false}
+				>Newsletter
+			</a>
+			<a href="/polls" aria-current={url.pathname === "/polls" ? "page" : false}
+				>Polls
+			</a>
+			<a href="/contribute" aria-current={url.pathname === "/contribute" ? "page" : false}
+				>Contribute
 			</a>
 		</nav>
 	</span>
